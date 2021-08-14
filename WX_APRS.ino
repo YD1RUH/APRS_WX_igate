@@ -54,9 +54,7 @@ void setup()
   GPS.sendCommand(PMTK_SET_NMEA_OUTPUT_RMCGGA);
   GPS.sendCommand(PMTK_SET_NMEA_UPDATE_1HZ); // 1 Hz update rate
   GPS.sendCommand(PGCMD_ANTENNA);
-
   delay(1000);
-
   // Ask for firmware version
   GPSSerial.println(PMTK_Q_RELEASE);
 }
